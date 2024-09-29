@@ -5,7 +5,7 @@ import java.sql.*;
 
 public class SQLDatabaseConnection {
 
-    // Connect to your database.
+    // Connect to Our database.
 
     static final String connectionUrl = "jdbc:mysql://localhost:3306/bmi_records_db";
     static final String user = "root";
@@ -47,6 +47,7 @@ public class SQLDatabaseConnection {
         return BMI / 25;
     }
 
+    //Display all result after execute this code 
     public void displayResults(double BMI, double BMI_Prime) {
 
         System.out.println("-------------User Details---------------------");
@@ -78,14 +79,16 @@ public class SQLDatabaseConnection {
         System.out.println("Your BMI prime  : " + BMI_Prime);
         System.out.println("Please Wait...");
 
+        //  After execute this code console will be Sleep for 9 seconds.
         try {
-            Thread.sleep(9000); // Sleep for 9 seconds
+            Thread.sleep(9000); 
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
 
     }
 
+    // This code will be generate  a new random password every times
     public static String generateRandomPassword() {
         String characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
         StringBuilder sb = new StringBuilder();
@@ -97,12 +100,13 @@ public class SQLDatabaseConnection {
         return sb.toString();
 
     }
-
+   // This function will be clear console screen after execute this code.
     public static void clearScreen() {
         System.out.print("\033[H\033[2J");
         System.out.flush();
     }
 
+    // This code  will be handle the all exception during execution  of code 
     public static void main(String[] args) throws Exception {
 
         Class.forName("com.mysql.cj.jdbc.Driver");
@@ -144,7 +148,7 @@ public class SQLDatabaseConnection {
                         // Generate user ID
                         newUserId = "user" + ((users.size() + 1));
 
-                        // Generate random password
+                        // This function will call for Generating random password
                         newPassword = generateRandomPassword();
                         users.put(newUserId, newPassword);
 
@@ -153,6 +157,7 @@ public class SQLDatabaseConnection {
                         System.out.println("User registration successful!");
                         System.out.println("Please Wait...");
 
+                         // Sleep for 3 seconds
                         try {
                             Thread.sleep(3000); // Sleep for 3 seconds
                         } catch (InterruptedException e) {
@@ -163,8 +168,9 @@ public class SQLDatabaseConnection {
 
                         System.out.println("Please Collect Your UserId and Password!... ");
 
+                        // Sleep for 3 seconds
                         try {
-                            Thread.sleep(3000); // Sleep for 3 seconds
+                            Thread.sleep(3000); 
                         } catch (InterruptedException e) {
                             e.printStackTrace();
                         }
@@ -266,6 +272,7 @@ public class SQLDatabaseConnection {
 
                         calculator.displayResults(BMI, BMI_Prime);
 
+                        //This code will astore all information in one datebase 
                         PreparedStatement sp = con
                                 .prepareStatement(
                                         "insert into CalculategitBmiData values('" + newUserId + "','" + newPassword
