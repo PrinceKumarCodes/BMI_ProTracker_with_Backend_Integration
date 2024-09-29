@@ -18,36 +18,28 @@ This **BMI Calculator** is a Java-based application that calculates the **Body M
 # Features
 
 - **User Registration**:-
-  
    Allows users to register with personal information like name, PRN, email, course, phone number, and age. The system generates a **unique user 
    ID** and a **random password** for each user.
   
 - **Login System**:-
-  
    Registered users can log in using their assigned user ID and password.
   
 - **BMI Calculation**:-
-  
    Users can calculate their BMI by entering weight and height. The system also calculates the **BMI Prime** based on the BMI result.
   
 - **Health Classification**:-
-  
    After calculating BMI, users are informed of their weight status (e.g., Underweight, Healthy, Overweight, Obese Class I-III).
   
 - **Data Persistence**:-
-  
    All user details and BMI results are stored in a **MySQL database** for easy retrieval in future sessions.
   
 - **Console-based Interface**:-
-  
    Simple text-based interface for ease of use, with console clearing for a cleaner experience.
   
 - **Secure Random Password Generation**:-
-  
    Automatically generates an 8-character password upon registration.
   
 - **Session Handling**:-
-  
    The application tracks whether a user is logged in and allows users to log out.
 
 # Technologies Used
