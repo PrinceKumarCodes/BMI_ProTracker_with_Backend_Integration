@@ -113,7 +113,6 @@ This **BMI Calculator** is a Java-based application that calculates the **Body M
 - The system generates a user ID and password, which are displayed on the console.
 
 **User Login:-**
-
 - Users log in using their user ID and password.
   
 - Upon successful login, they can calculate their BMI.
