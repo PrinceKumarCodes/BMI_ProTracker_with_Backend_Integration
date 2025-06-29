@@ -96,7 +96,6 @@ public class SQLDatabaseConnection {
             e.printStackTrace();
         }
     }
-
    // Generate a random password for new users
     public static String generateRandomPassword() {
         String characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
@@ -105,7 +104,6 @@ public class SQLDatabaseConnection {
             int index = (int) (Math.random() * characters.length());
             sb.append(characters.charAt(index));
         }
-
         return sb.toString();
 
     }
@@ -332,7 +330,7 @@ public class SQLDatabaseConnection {
                 }
             }
             clearScreen(); // Clear the screen after each iteration
-
+           
         }
 
     }
