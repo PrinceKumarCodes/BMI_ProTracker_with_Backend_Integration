@@ -105,7 +105,6 @@ public class SQLDatabaseConnection {
             sb.append(characters.charAt(index));
         }
         return sb.toString();
-
     }
 // Clear console screen
     public static void clearScreen() {
