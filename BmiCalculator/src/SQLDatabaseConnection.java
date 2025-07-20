@@ -209,7 +209,8 @@ public class SQLDatabaseConnection {
                         String password = input.next(); // Get password input
 
                         clearScreen();
-                        if (users.containsKey(userId) && users.get(userId).equals(password)) {// Check if the entered user ID and password match
+                           // Check if the entered user ID and password match
+                        if (users.containsKey(userId) && users.get(userId).equals(password)) {
                             System.out.println("Login successfully!");
                             System.out.println("Please Wait...");
                             loggedInUser = userId; // Set logged in user
