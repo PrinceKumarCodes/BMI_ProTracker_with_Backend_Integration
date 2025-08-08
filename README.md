@@ -120,6 +120,8 @@ This **BMI Calculator** is a Java-based application that calculates the **Body M
 **BMI Calculation:-**
 
 - The user inputs their weight and height.
+
+  
   
 - The program calculates and displays the BMI, BMI Prime, and health category.
 
